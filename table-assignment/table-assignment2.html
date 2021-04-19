@@ -30,6 +30,7 @@
             width: 100%;
             min-height: 100vh;
             background: #c850c0;
+            background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
             display: -webkit-box;
             display: -webkit-flex;
             display: -moz-box;
@@ -44,7 +45,6 @@
         table {
             border-spacing: 1;
             border-collapse: collapse;
-            background: white;
             border-radius: 10px;
             overflow: hidden;
             width: 80%;
@@ -59,8 +59,13 @@
 
         thead th {
             background: #19132bf8;
+            color: white;
         }
 
+        tbody tr {
+            background: white;
+        }
+        
         th,
         td {
             text-align: left;
@@ -73,12 +78,11 @@
         }
 
         tr:nth-child(even) {
-            background-color: #f2f2f2
+            background-color: #dbd7d7;
+            color: rgb(20, 20, 20);
         }
-
-        th {
-            background-color: rgb(31, 30, 30);
-            color: white;
+        tr:nth-child(odd) {
+            color: #313131
         }
     </style>
 </head>
